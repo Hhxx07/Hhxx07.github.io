@@ -41,9 +41,6 @@ theme:
         icon: material/brightness-4
         name: bright_mode
 
-nav:
-  - 首页: index.md
-
 markdown_extensions:
   - admonition
   - attr_list
