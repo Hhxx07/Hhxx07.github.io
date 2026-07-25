@@ -1,0 +1,72 @@
+site_name: Notes
+site_description: 笔记本
+site_author: hhxx07
+
+# 用户主页仓库：YOUR_NAME.github.io
+site_url: https://Hhxx07.github.io/
+
+repo_name: Hhxx07/Hhxx07.github.io
+repo_url: https://github.com/Hhxx07/Hhxx07.github.io
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: zh
+
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: orange
+      toggle:
+        icon: material/brightness-7
+        name: dark_mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: orange
+      toggle:
+        icon: material/brightness-4
+        name: bright_mode
+
+nav:
+  - 首页: index.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - footnotes
+  - tables
+  - def_list
+
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+
+copyright: Copyright &copy; 2077
